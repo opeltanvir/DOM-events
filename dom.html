@@ -10,13 +10,15 @@
  <main>
      <section>
          <h3>Exploring dom</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, neque!</p>
+         <p id='first'>My first paragraph</p>
+         <p>My second paragraph</p>
      </section>
  </main>
  <script>
-     var user = {name : 'jalali set' , song : 'kakatua' ,member : 6}
-     //DOM ==> document object model
-     console.log(document.body);
+     var first = document.getElementById('first')
+     first.style.backgroundColor = 'yellow';
+     first.style.color = 'green';
+     first.style.fontSize = '45px';
  </script>
 </body>
 </html>
