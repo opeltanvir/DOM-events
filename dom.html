@@ -12,17 +12,20 @@
             margin: 5px;
             padding: 5px;
         }
+        .special h3{
+
+        }
     </style>
 </head>
 <body>
  <main>
      <section>
          <h3>Exploring dom</h3>
-        <article>
+        <article class="special">
             <h3>articale-1</h3>
             <p class="author">author-1</p>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consectetur sit, quisquam non sequi quod nemo voluptate corporis quaerat ipsa, voluptates dolore saepe! Delectus, illo exercitationem placeat porro vero sequi.</p>
-        </article>
+        </article >
         <article>
             <h3>articale-2</h3>
             <p class="author">author-2</p>
@@ -46,9 +49,11 @@
      </section>
  </main>
  <script>
-     var authors = document.getElementsByClassName ('author');
+     document.body.style.backgroundColour = 'tomato';
+     var authors = document.querySelectorAll ('special h3');
      for (var i= 0 ; i< authors.length;i++){
          var element = authors[i];
+         element.innerHTML = 'Lekhok' + (i +1);
          element.style.backgroundColour = 'lightblue';
          element.style.margin = '10px';
      }
